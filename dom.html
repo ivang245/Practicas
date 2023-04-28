@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scripts/domStyle.css">
+    <title>DOM</title>
+</head>
+<body>
+    <header>
+        <h1>Práctica DOM</h1>
+        <p>Realice los siguientes ejercicios</p>
+        <ol>
+            <li>Cambio de texto: Crea un botón que, al hacer clic en él, cambie el texto de un elemento div por "¡Hola Mundo!".</li>
+            <li>Cambio de estilo: Crea un botón que, al hacer clic en él, cambie el color de fondo de un elemento div.</li>
+            <li>Captura de eventos: Crea un botón que, al hacer clic en él, muestre una alerta con el mensaje "¡Haz hecho clic!".</li>
+            <li>Cambio de texto: Crea un botón que, al hacer clic en él, cambie el estilo de un elemento div ocultandolo y cambiando su texto por ocultar o mostrar según sea el caso.</li>
+        </ol>
+    </header>
+    <main>
+        <div id="cajaTexto">
+            <div id="textoPredeterminado">Texto  predeterminado</div>
+            <button id="click" onclick="cambio(textoPredeterminado)">Click</button>
+            <button id="colorBoton" onclick="color(cajaTexto)">Color</button>
+            <button id="clic" onclick="alertaClic();">Clic</button>
+        </div>
+        <button id="botonMostrar" onclick="mostrar()">Ocultar</button>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="scripts/domJS.js"></script>
+</html>
